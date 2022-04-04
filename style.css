@@ -26,10 +26,8 @@
   transition: background-color ease-in 0.25s !important;
 }
 
-
-
 .primary-btn-sdw {
-  padding:10px 50px !important;
+  padding: 10px 50px !important;
   box-shadow: 0 2px 5px silver !important;
 }
 
@@ -135,4 +133,19 @@ header > img {
 
 .main-nav > a:last-of-type::after {
   display: none;
+}
+
+footer {
+  background-color: #f1f1f1;
+}
+
+footer > .container .row div ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer > .container .row div ul li {
+  color: #3a3a3a;
+  margin: 25px 0;
+  font-weight: 200;
 }
