@@ -22,13 +22,13 @@
   color: black !important;
   text-align: center;
   font-weight: 400;
-  padding: 10px 30px !important;
+  padding: 15px 50px !important;
   background-color: rgba(231, 215, 192, 1) !important;
   transition: background-color ease-in 0.25s !important;
 }
 
 .primary-btn-sdw {
-  padding: 10px 50px !important;
+  padding: 15px 100px !important;
   box-shadow: 0 2px 5px silver !important;
 }
 
