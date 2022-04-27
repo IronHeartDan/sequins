@@ -20,17 +20,42 @@
       crossorigin="anonymous"
     ></script>
     <title>SEQUINS</title>
+    <style>
+      #instafeed-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+      }
+      #instafeed-container > a > img{
+        width: 100%;
+      }
+      .insta-btn{
+        text-decoration: none;
+        color: #3a3a3a;
+        padding: 5px 10px;
+        border: 2px solid #3a3a3a;
+        border-radius: 5px;
+        transition: all ease-in-out 0.25s;
+        display: flex;
+        align-items: center;
+      }
+      .insta-btn:hover{
+        background-color: #e7d7c0;
+        color: black;
+        box-shadow: 0 0 5px #3a3a3a;
+      }
+    </style>
   </head>
   <body>
     <header class="d-none d-xl-grid d-lg-grid">
       <img src="./assets/images/logo.png" alt="SEQUINS" />
       <nav class="main-nav">
         <a href="./index.html">HOME</a>
-        <a href="#">PRODUCTS</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">HOW TO ORDER</a>
-        <a href="#" class="nav_checked">INSTA GALLERY</a>
-        <a href="#" class="primary-btn">Contact Us</a>
+        <a href="./index.html#products">PRODUCTS</a>
+        <a href="./index.html#about">ABOUT US</a>
+        <a href="./index.html#how">HOW TO ORDER</a>
+        <a href="./insta_gallery.html" class="nav_checked">INSTA GALLERY</a>
+        <a href="./index.html#contact" class="primary-btn">Contact Us</a>
       </nav>
     </header>
 
@@ -55,24 +80,26 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav text-center align-items-baseline p-2">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">HOME</a>
+                <a class="nav-link" aria-current="page" href="#home"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PRODUCTS</a>
+                <a class="nav-link" href="#products">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#about">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">HOW TO ORDER</a>
+                <a class="nav-link" href="#how">HOW TO ORDER</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" href="./insta_gallery.html"
                   >INSTA GALLERY</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link primary-btn" href="#">Contact Us</a>
+                <a class="nav-link primary-btn" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -86,75 +113,95 @@
         alt="Insta-Gallery"
         class="w-100"
       />
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between px-5 pt-5">
+          <div><strong>Insta Id: sequinsboutiqs</strong></div>
+          <div>
+            <a href="#" class="insta-btn"><img src="./assets/images/asset_instagram_icon.png" alt="Instagram">&nbsp&nbsp&nbsp&nbspFollow</a>
+          </div>
+        </div>
+      </div>
+      <div id="instafeed-container" class="container p-5">
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+      <script type="text/javascript">
+        var userFeed = new Instafeed({
+          get: "sequinsboutiques",
+          target: "instafeed-container",
+          resolution: "low_resolution",
+          accessToken: "IGQVJVQzFKS3p0dDVRN1VxNVFvdTBWUGRaNEVIc0c0MHRNMjJrNGF2aDRNYWlmbk1EY1JmSVdod196alpLY2ViQy1GTFVkdXVSNDBWWk9vT3pGS3ZA6LUJxR3RoYm5BVkpUQzB3OHNCcEpqVW40NllMWAZDZD",
+        });
+        userFeed.run();
+      </script>
     </div>
 
     <footer class="container-fluid mt-5 p-0">
-        <div class="container pt-5">
-          <div class="row gy-5 text-center text-md-start">
-            <div class="col-xl col-lg-12 col-md-12 col-sm-12 text-center">
-              <img src="./assets/images/footer_logo.png" alt="SEQUINS" />
-            </div>
-            <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
-              <h4>ABOUT</h4>
-              <ul>
-                <li>ABOUT US</li>
-                <li>INSTA GALLERY</li>
-              </ul>
-            </div>
-            <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
-              <h4>PRODUCT</h4>
-              <ul>
-                <li>ANARKALI</li>
-                <li>PALAZZO SETS</li>
-                <li>SHAARARA SETS</li>
-              </ul>
-            </div>
-            <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
-              <h4>ADDRESS</h4>
-              <ul>
-                <li>Wola, Sample address 560-864 Xyz City.</li>
-              </ul>
-            </div>
-            <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
-              <h4>CONTACT</h4>
-              <ul>
-                <li>+ 48 690 196 016</li>
-                <li>
-                  <div class="row">
-                    <div class="col">
-                      <img src="./assets/images/icon_mail.png" alt="Mail" />
-                    </div>
-                    <div class="col">
-                      <img src="./assets/images/icon_phone.png" alt="Phone" />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="./assets/images/icon_facebook.png"
-                        alt="FaceBook"
-                      />
-                    </div>
-                    <div class="col">
-                      <img src="./assets/images/icon_insta.png" alt="Instagram" />
-                    </div>
+      <div class="container pt-5">
+        <div class="row gy-5 text-center text-md-start">
+          <div class="col-xl col-lg-12 col-md-12 col-sm-12 text-center">
+            <img src="./assets/images/footer_logo.png" alt="SEQUINS" />
+          </div>
+          <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
+            <h4>ABOUT</h4>
+            <ul>
+              <li>ABOUT US</li>
+              <li>INSTA GALLERY</li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
+            <h4>PRODUCT</h4>
+            <ul>
+              <li>ANARKALI</li>
+              <li>PALAZZO SETS</li>
+              <li>SHAARARA SETS</li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
+            <h4>ADDRESS</h4>
+            <ul>
+              <li>Wola, Sample address 560-864 Xyz City.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>+ 48 690 196 016</li>
+              <li>
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/icon_mail.png" alt="Mail" />
                   </div>
-                </li>
-              </ul>
-            </div>
+                  <div class="col">
+                    <img src="./assets/images/icon_phone.png" alt="Phone" />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="./assets/images/icon_facebook.png"
+                      alt="FaceBook"
+                    />
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/icon_insta.png" alt="Instagram" />
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-  
-      <div
-        class="container-fluid p-2"
-        style="background-color: #3a3a3a; color: white"
-      >
-        <div
-          class="container d-flex flex-column flex-xl-row flex-lg-row align-items-center justify-content-between text-center"
-        >
-          <span class="mb-2">© 2021 Sequins Boutiqes - All Rights Reserved</span>
-          <span>Made with passion by Trivanzo.</span>
-        </div>
       </div>
-    </body>
-  </html>
-  
+    </footer>
+
+    <div
+      class="container-fluid p-2"
+      style="background-color: #3a3a3a; color: white"
+    >
+      <div
+        class="container d-flex flex-column flex-xl-row flex-lg-row align-items-center justify-content-between text-center"
+      >
+        <span class="mb-2">© 2021 Sequins Boutiqes - All Rights Reserved</span>
+        <span>Made with passion by Trivanzo.</span>
+      </div>
+    </div>
+  </body>
+</html>
