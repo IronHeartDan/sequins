@@ -10,6 +10,18 @@
   src: url("./assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf");
 }
 
+.accordion-button::after {
+  background-image: url("./assets/images/asset_plusIcon.png") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg) !important;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  font-weight: bold;
+}
+
 .title {
   font-family: "Cormorant Garamond", sans-serif !important;
   color: #b01ba6;
@@ -119,63 +131,61 @@ textarea {
 .discover_con {
   position: relative;
   width: 100%;
-  z-index: -2;
-  height: max-content;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.showCase-item {
-  flex: 1;
-  max-width: max-content;
-
-  position: relative;
-  transition: all ease-in-out 0.25s;
+.discover_con > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  transition: all ease-in-out 0.5s;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.showCase-item > img {
+
+@media screen and (min-width: 500px) {
+  .discover_con > div {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .discover_con > div {
+    width: 30%;
+  }
+}
+
+.discover_con > div > img {
   width: 100%;
-  max-width: max-content;
-  max-height: 650px;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Left slide*/
-.showCase-item[data-order="1"] {
-  margin-left: -2%;
+.showCaseItem[data-order="1"] {
+  z-index: 0;
+  transform: translate(-120%, -50%) scale(0.8) !important;
 }
-
-.showCase-item[data-order="1"] > img {
+.showCaseItem[data-order="1"] > img {
   filter: grayscale(100%);
 }
 
-/* Middle slide */
-.showCase-item[data-order="2"] {
-  transform: scale(1.1);
-}
-.showCase-item[data-order="2"] > img {
-  filter: sepia(100%);
+.showCaseItem[data-order="2"] {
+  z-index: 1;
+  transform: translate(-50%, -50%) !important;
 }
 
-/* Right slide*/
-.showCase-item[data-order="3"] {
-  margin-right: -2%;
+.showCaseItem[data-order="3"] {
+  z-index: -1;
+  transform: translate(20%, -50%) scale(0.8) !important;
 }
 
-.showCase-item[data-order="3"] > img {
+.showCaseItem[data-order="3"] > img {
   filter: grayscale(100%);
-}
-
-#itemOne {
-  z-index: unset;
-  order: 2;
-}
-
-#itemTwo {
-  order: 1;
-  z-index: -1;
-}
-
-#itemThree {
-  order: 3;
-  z-index: -1;
 }
 
 body {
@@ -201,7 +211,7 @@ header {
   z-index: 999;
 }
 
-header > img {
+header > a {
   grid-column: 1/2;
 }
 
@@ -214,7 +224,7 @@ header > img {
 }
 
 @media screen and (min-width: 1100px) {
-  header > img {
+  header > a {
     grid-column: 1/2;
   }
 
@@ -225,7 +235,7 @@ header > img {
 }
 
 @media screen and (min-width: 1600px) {
-  header > img {
+  header > a {
     grid-column: 2/3;
   }
 

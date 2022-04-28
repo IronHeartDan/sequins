@@ -29,7 +29,24 @@
   </head>
   <body>
     <header class="d-none d-xl-grid d-lg-grid">
-      <img src="./assets/images/logo.png" alt="SEQUINS" />
+      <!-- <img src="./assets/images/logo.png" alt="SEQUINS" /> -->
+      <a
+        class="navbar-brand d-flex align-items-center"
+        href="#"
+        style="
+          font-family: 'Cormorant Garamond', sans-serif !important;
+          font-weight: bold;
+          color: black;
+        "
+      >
+        <img
+          src="./assets/images/footer_logo.png"
+          alt="SEQUINS"
+          style="height: 80px"
+        />
+        <hr style="height: 40px; width: 1px" class="me-2" />
+        SEQUINS BOUTIQUES
+      </a>
       <nav class="main-nav">
         <a href="#home" class="nav_checked desk-nav-item">HOME</a>
         <a href="#products" class="desk-nav-item">PRODUCTS</a>
@@ -43,25 +60,42 @@
     <header class="p-0 d-block d-xl-none d-lg-none">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="SEQUINS" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="border: none; outline: none; box-shadow: unset"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex w-100 justify-content-between">
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="#"
+              style="
+                font-family: 'Cormorant Garamond', sans-serif !important;
+                font-weight: bold;
+              "
+            >
+              <img
+                src="./assets/images/footer_logo.png"
+                alt="SEQUINS"
+                style="height: 80px"
+              />
+              <hr style="height: 40px; width: 1px" class="me-2" />
+              SEQUINS BOUTIQUES
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="border: none; outline: none; box-shadow: unset"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav text-center align-items-baseline p-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#products">PRODUCTS</a>
@@ -295,24 +329,27 @@
       </div>
     </div>
 
-    <div class="container-fluid p-2 p-md-5" id="products">
-      <h1 class="title text-center">Discover Our Best Products</h1>
-      <p class="text-center">
-        We love the meticulous detail in making the most exquisite Indian ethnic
-        <br class="d-none d-md-block" />
-        wear. For your convenience, we bring all of it to you online!
-      </p>
+    <div class="container-fluid p-0 p-md-5" id="products">
+      <div class="p-2 p-md-0">
+        <h1 class="title text-center">Discover Our Best Products</h1>
+        <p class="text-center">
+          We love the meticulous detail in making the most exquisite Indian
+          ethnic
+          <br class="d-none d-md-block" />
+          wear. For your convenience, we bring all of it to you online!
+        </p>
+      </div>
       <div
-        class="d-flex align-items-center justify-content-center discover_con p-2 p-md-5"
+        class="d-flex align-items-center justify-content-center discover_con p-0 p-md-5 vh-100"
       >
-        <div class="showCase-item" id="itemOne" data-order="2">
+        <div class="showCaseItem" id="itemOne" data-order="2">
           <img
             src="./assets/images/asset_anarkali.png"
             alt="ShowCase"
             style="background-color: white"
           />
         </div>
-        <div class="showCase-item" id="itemTwo" data-order="1">
+        <div class="showCaseItem" id="itemTwo" data-order="1">
           <img
             src="./assets/images/asset_showcase_start.png"
             alt="ShowCase"
@@ -320,7 +357,7 @@
           />
         </div>
 
-        <div class="showCase-item" id="itemThree" data-order="3">
+        <div class="showCaseItem" id="itemThree" data-order="3">
           <img
             src="./assets/images/asset_showcase_end.png"
             alt="ShowCase"
@@ -343,80 +380,87 @@
       </div>
     </div>
 
-    <div class="container-fluid about_us p-3 p-md-5 d-flex align-items-center" id="about">
+    <div
+      class="container-fluid about_us p-3 p-md-5 d-flex align-items-center"
+      id="about"
+    >
       <div class="d-none d-xxl-block p-5">
         <h1 class="title" style="color: white">ABOUT US</h1>
         <p style="color: white">
-          Founded in 2021 by Annu and Bhumika, Sequins Boutiques has a deep
-          history behind its founders with beginnings in several years of
-          fashion designing. Annu is an expert in creating and modifying popular
-          trends in fashion. Bhumika, Hairstylist and Esthetician by profession
-          longed to share her background in Fashion design with Annu. When they
-          first started out, their passion for balancing a fine fabric with the
-          latest in style design, it drove them to action. Committing their time
-          and resources to tons of research to establish sources of quality
-          fabric and fine tailoring to match their creations. Now, Sequins
-          Boutiques serve clients all over North America. We are thrilled that
-          we're able to turn your search for a beautiful dress into a success
-          tour website. We hope you enjoy our dress pieces as much as we enjoy
-          offering them to you.
+          Welcome to Sequins Boutiques! We provide you with the best traditional
+          and ethnic outfits that fit you and your style. We're your number one
+          source for all the latest in Fashion wear - Formal, Semi-Formal and
+          Bridal. Our garments are made from the highest quality fabrics,
+          handpicked by our lead designers and guarantee to give you
+          functionality, durability with a focus on the latest trends and
+          styles. We carry a full and thorough collection, all year round. At
+          Sequins Boutiques we offer you outfits that are designed to perfection
+          by keeping in mind the intricate detailing, weaving patterns, colors,
+          sequins work and overall craftsmanship that reflects aura, class,
+          elegance and grandeur which is of the highest quality. Fast fashion is
+          easy for consumers because it is just that; fast & inexpensive. At
+          Sequins Boutiques we really strive to make shopping affordable. We
+          hope to be the final stop on your search for the perfect dress.
         </p>
       </div>
 
       <div class="d-none d-lg-block d-xxl-none w-50 p-5">
         <h1 class="title" style="color: white">ABOUT US</h1>
         <p style="color: white">
-          Founded in 2021 by Annu and Bhumika, Sequins Boutiques has a deep
-          history behind its founders with beginnings in several years of
-          fashion designing. Annu is an expert in creating and modifying popular
-          trends in fashion. Bhumika, Hairstylist and Esthetician by profession
-          longed to share her background in Fashion design with Annu. When they
-          first started out, their passion for balancing a fine fabric with the
-          latest in style design, it drove them to action. Committing their time
-          and resources to tons of research to establish sources of quality
-          fabric and fine tailoring to match their creations. Now, Sequins
-          Boutiques serve clients all over North America. We are thrilled that
-          we're able to turn your search for a beautiful dress into a success
-          tour website. We hope you enjoy our dress pieces as much as we enjoy
-          offering them to you.
+          Welcome to Sequins Boutiques! We provide you with the best traditional
+          and ethnic outfits that fit you and your style. We're your number one
+          source for all the latest in Fashion wear - Formal, Semi-Formal and
+          Bridal. Our garments are made from the highest quality fabrics,
+          handpicked by our lead designers and guarantee to give you
+          functionality, durability with a focus on the latest trends and
+          styles. We carry a full and thorough collection, all year round. At
+          Sequins Boutiques we offer you outfits that are designed to perfection
+          by keeping in mind the intricate detailing, weaving patterns, colors,
+          sequins work and overall craftsmanship that reflects aura, class,
+          elegance and grandeur which is of the highest quality. Fast fashion is
+          easy for consumers because it is just that; fast & inexpensive. At
+          Sequins Boutiques we really strive to make shopping affordable. We
+          hope to be the final stop on your search for the perfect dress.
         </p>
       </div>
 
       <div class="d-none d-md-block d-lg-none w-75 p-5">
         <h1 class="title" style="color: white">ABOUT US</h1>
         <p style="color: white">
-          Founded in 2021 by Annu and Bhumika, Sequins Boutiques has a deep
-          history behind its founders with beginnings in several years of
-          fashion designing. Annu is an expert in creating and modifying popular
-          trends in fashion. Bhumika, Hairstylist and Esthetician by profession
-          longed to share her background in Fashion design with Annu. When they
-          first started out, their passion for balancing a fine fabric with the
-          latest in style design, it drove them to action. Committing their time
-          and resources to tons of research to establish sources of quality
-          fabric and fine tailoring to match their creations. Now, Sequins
-          Boutiques serve clients all over North America. We are thrilled that
-          we're able to turn your search for a beautiful dress into a success
-          tour website. We hope you enjoy our dress pieces as much as we enjoy
-          offering them to you.
+          Welcome to Sequins Boutiques! We provide you with the best traditional
+          and ethnic outfits that fit you and your style. We're your number one
+          source for all the latest in Fashion wear - Formal, Semi-Formal and
+          Bridal. Our garments are made from the highest quality fabrics,
+          handpicked by our lead designers and guarantee to give you
+          functionality, durability with a focus on the latest trends and
+          styles. We carry a full and thorough collection, all year round. At
+          Sequins Boutiques we offer you outfits that are designed to perfection
+          by keeping in mind the intricate detailing, weaving patterns, colors,
+          sequins work and overall craftsmanship that reflects aura, class,
+          elegance and grandeur which is of the highest quality. Fast fashion is
+          easy for consumers because it is just that; fast & inexpensive. At
+          Sequins Boutiques we really strive to make shopping affordable. We
+          hope to be the final stop on your search for the perfect dress.
         </p>
       </div>
 
       <div class="d-block d-md-none w-100 p-3">
         <h1 class="title" style="color: white">ABOUT US</h1>
         <p style="color: white">
-          Founded in 2021 by Annu and Bhumika, Sequins Boutiques has a deep
-          history behind its founders with beginnings in several years of
-          fashion designing. Annu is an expert in creating and modifying popular
-          trends in fashion. Bhumika, Hairstylist and Esthetician by profession
-          longed to share her background in Fashion design with Annu. When they
-          first started out, their passion for balancing a fine fabric with the
-          latest in style design, it drove them to action. Committing their time
-          and resources to tons of research to establish sources of quality
-          fabric and fine tailoring to match their creations. Now, Sequins
-          Boutiques serve clients all over North America. We are thrilled that
-          we're able to turn your search for a beautiful dress into a success
-          tour website. We hope you enjoy our dress pieces as much as we enjoy
-          offering them to you.
+          Welcome to Sequins Boutiques! We provide you with the best traditional
+          and ethnic outfits that fit you and your style. We're your number one
+          source for all the latest in Fashion wear - Formal, Semi-Formal and
+          Bridal. Our garments are made from the highest quality fabrics,
+          handpicked by our lead designers and guarantee to give you
+          functionality, durability with a focus on the latest trends and
+          styles. We carry a full and thorough collection, all year round. At
+          Sequins Boutiques we offer you outfits that are designed to perfection
+          by keeping in mind the intricate detailing, weaving patterns, colors,
+          sequins work and overall craftsmanship that reflects aura, class,
+          elegance and grandeur which is of the highest quality. Fast fashion is
+          easy for consumers because it is just that; fast & inexpensive. At
+          Sequins Boutiques we really strive to make shopping affordable. We
+          hope to be the final stop on your search for the perfect dress.
         </p>
       </div>
     </div>
@@ -588,9 +632,44 @@
                 </div>
                 <div class="col-12 col-md">
                   <p>
-                    <strong>Hema Shetty</strong> - I'm in love with the fitting
-                    of my sharara. The measurements are just so perfect, it
-                    feels like the lehenga was destined to be worn by me.
+                    <strong>Jyotsna Kishore</strong> - Loved my custom made
+                    outfit. The entire process from designing to selecting the
+                    material and styling was very smooth. The owner and her
+                    designers are super nice and easy to work with. The garment
+                    and workmanship is of high quality and the best part I
+                    received it within 2 weeks of ordering, unbelievable! The
+                    package was delivered on time, neatly packed and sealed. I
+                    highly recommend this store and will definitely be ordering
+                    again!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="row g-5 d-flex align-items-center justify-content-center"
+              >
+                <div
+                  class="col-12 col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="./assets/images/asset_one.png"
+                    alt="Asset"
+                    style="
+                      width: 150px;
+                      height: 150px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                  />
+                </div>
+                <div class="col-12 col-md">
+                  <p>
+                    <strong>Kalki Thakur</strong> - The quality of the fabric
+                    used in my saree is very commendable. The quality of the
+                    chiffon is really admirable. My sincere gratitude to the
+                    designers of my saree.
                   </p>
                 </div>
               </div>
@@ -616,9 +695,9 @@
                 </div>
                 <div class="col-12 col-md">
                   <p>
-                    <strong> Divya Chouhan</strong> - Thankyou so much Sequins
+                    <strong> Divya Chouhan</strong> - Thank you so much Sequins
                     Boutiques for designing this stunning sharara for my
-                    Sangeet. I was showed with compliments and my husband
+                    Sangeet. I was showered with compliments and my husband
                     couldn't stop looking at me.
                   </p>
                 </div>
@@ -673,10 +752,11 @@
                 </div>
                 <div class="col-12 col-md">
                   <p>
-                    <strong> Divya Chouhan</strong> - Thankyou so much Sequins
-                    Boutiques for designing this stunning sharara for my
-                    Sangeet. I was showed with compliments and my husband
-                    couldn't stop looking at me.
+                    <strong>Shreeya Rathod</strong> - Purchasing from Sequins
+                    Boutiques is a very positive experience. Garments are
+                    beautiful & the service is fantastic. I will continue to buy
+                    from this company as the styles are great, the quality is
+                    good and very consistent.
                   </p>
                 </div>
               </div>
@@ -733,6 +813,18 @@
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
+            <button
+              style="
+                background-color: #e7d7c0;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+              "
+              type="button"
+              data-bs-target="#testimonialsCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
           </div>
         </div>
       </div>
@@ -769,6 +861,145 @@
             <a href="#" style="color: #e7d7c0; text-decoration: none"
               >SEE THE MAP</a
             >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h1 class="title">Frequently Asked Questions</h1>
+      <p class="pb-5">
+        Here are the answers to some frequently asked questions by our
+        customers, we hope you find this useful. Any other questions, type below
+        or feel free to reach out to us and we'll be glad to assist you.
+      </p>
+      <hr />
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Does Sequins Boutiques do custom orders?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Yes, we offer custom made outfits. We will do our best to match
+              and customize your outfit close to your vision.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              How long does it take for my order to be shipped after the date of
+              purchase?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              After payment is received we try our best to ship your dress the
+              same day or latest by next day.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Where can you provide shipping to?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              We provide worldwide shipping. Please contact us for an exact
+              quote.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Can I order a pre-made outfit that is out of stock on your
+              website?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              The out of stock outfits cannot be ordered until they're restocked
+              again.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              If you need assistance in placing an order, click on the link
+              below for step by step instructions.
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <a href="#how">How To Order ?</a>
+            </div>
           </div>
         </div>
       </div>
@@ -826,7 +1057,7 @@
             ></textarea>
           </div>
 
-          <div class="col-12 text-center">
+          <div class="col-12 text-center p-0">
             <a href="#" class="primary-btn-sdw col-auto text-center"
               >Send Message</a
             >
