@@ -18,8 +18,14 @@
   transform: rotate(45deg) !important;
 }
 
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: rgba(231, 215, 192, 0.5) !important;
+  box-shadow: unset !important;
+}
+
 .accordion-flush .accordion-item .accordion-button {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .title {
@@ -40,7 +46,7 @@
 }
 
 .primary-btn-sdw {
-  padding: 15px 100px !important;
+  padding: 15px 50px !important;
   box-shadow: 0 2px 5px silver !important;
 }
 
@@ -188,10 +194,14 @@ textarea {
   filter: grayscale(100%);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif !important;
   -webkit-font-smoothing: antialiased;
-  user-select: none;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -211,7 +221,7 @@ header {
   z-index: 999;
 }
 
-header > a {
+header > div {
   grid-column: 1/2;
 }
 
@@ -224,7 +234,7 @@ header > a {
 }
 
 @media screen and (min-width: 1100px) {
-  header > a {
+  header > div {
     grid-column: 1/2;
   }
 
@@ -235,7 +245,7 @@ header > a {
 }
 
 @media screen and (min-width: 1600px) {
-  header > a {
+  header > div {
     grid-column: 2/3;
   }
 
@@ -371,7 +381,11 @@ header > a {
   width: 40%;
 }
 
-.about_us_content h3,
+.about_us_content h4{
+font-weight: 400;
+}
+
+.about_us_content h4,
 .about_us_content span {
   margin: 10px 0;
 }
@@ -386,7 +400,11 @@ footer > .container .row div ul {
 }
 
 footer > .container .row div ul li {
-  color: #3a3a3a;
   margin: 25px 0;
   font-weight: 200;
+}
+
+footer > .container .row div ul li  a{
+  text-decoration: none;
+  color: #3a3a3a;
 }

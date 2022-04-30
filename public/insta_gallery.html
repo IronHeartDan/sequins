@@ -48,12 +48,27 @@
   </head>
   <body>
     <header class="d-none d-xl-grid d-lg-grid">
-      <img src="./assets/images/logo.png" alt="SEQUINS" />
+      <div
+        class="navbar-brand d-flex align-items-center"
+        style="
+          font-family: 'Cormorant Garamond', sans-serif !important;
+          font-weight: bold;
+          color: black;
+        "
+      >
+        <img
+          src="./assets/images/logo.svg"
+          alt="SEQUINS"
+          style="height: 80px; width: 80px; object-fit: contain"
+        />
+        <hr style="height: 40px; width: 1px" class="mx-2" />
+        SEQUINS BOUTIQUES
+      </div>
       <nav class="main-nav">
-        <a href="./index.html">HOME</a>
-        <a href="./index.html#products">PRODUCTS</a>
-        <a href="./index.html#about">ABOUT US</a>
-        <a href="./index.html#how">HOW TO ORDER</a>
+        <a href="./index.html" class="desk-nav-item">HOME</a>
+        <a href="./index.html#products" class="desk-nav-item">PRODUCTS</a>
+        <a href="./index.html#about" class="desk-nav-item">ABOUT US</a>
+        <a href="./index.html#how" class="desk-nav-item">HOW TO ORDER</a>
         <a href="./insta_gallery.html" class="nav_checked">INSTA GALLERY</a>
         <a href="./index.html#contact" class="primary-btn">Contact Us</a>
       </nav>
@@ -62,25 +77,40 @@
     <header class="p-0 d-block d-xl-none d-lg-none">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="SEQUINS" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="border: none; outline: none; box-shadow: unset"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex w-100 justify-content-between">
+            <div
+              class="navbar-brand d-flex align-items-center"
+              style="
+                font-family: 'Cormorant Garamond', sans-serif !important;
+                font-weight: bold;
+                color: black;
+              "
+            >
+              <img
+                src="./assets/images/logo.svg"
+                alt="SEQUINS"
+                style="height: 80px; width: 80px; object-fit: contain"
+              />
+              <hr style="height: 40px; width: 1px" class="mx-2" />
+              SEQUINS BOUTIQUES
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="border: none; outline: none; box-shadow: unset"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav text-center align-items-baseline p-2">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link active" aria-current="page" href="./index.html"
                   >HOME</a
                 >
               </li>
@@ -94,7 +124,7 @@
                 <a class="nav-link" href="./index.html#how">HOW TO ORDER</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./insta_gallery.html"
+                <a class="nav-link" href="./insta_gallery.html"
                   >INSTA GALLERY</a
                 >
               </li>
@@ -107,54 +137,62 @@
       </nav>
     </header>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 position-relative">
       <img
-        src="./assets/images/asset_one.png"
+        src="./assets/images/asset_one.jpg"
         alt="Insta-Gallery"
         class="w-100"
       />
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between px-5 pt-5">
-          <div><strong>Insta Id: sequinsboutiqs</strong></div>
-          <div>
-            <a href="#" class="insta-btn"><img src="./assets/images/asset_instagram_icon.png" alt="Instagram">&nbsp&nbsp&nbsp&nbspFollow</a>
-          </div>
+      <div
+        class="position-absolute w-100 h-100 d-flex align-items-center"
+        style="top: 0; left: 10%; color: white;"
+      >
+      <h1>ShowCase</h1>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between px-5 pt-5">
+        <div><strong>Insta Id: sequinsboutiqs</strong></div>
+        <div>
+          <a href="https://www.instagram.com/sequinsboutiques/" target="_blank" class="insta-btn"><img src="./assets/images/asset_instagram_icon.png" alt="Instagram">&nbsp&nbsp&nbsp&nbspFollow</a>
         </div>
       </div>
-      <div id="instafeed-container" class="container p-5">
-      </div>
-
-      <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-      <script type="text/javascript">
-        var userFeed = new Instafeed({
-          get: "sequinsboutiques",
-          target: "instafeed-container",
-          resolution: "low_resolution",
-          accessToken: "IGQVJVQzFKS3p0dDVRN1VxNVFvdTBWUGRaNEVIc0c0MHRNMjJrNGF2aDRNYWlmbk1EY1JmSVdod196alpLY2ViQy1GTFVkdXVSNDBWWk9vT3pGS3ZA6LUJxR3RoYm5BVkpUQzB3OHNCcEpqVW40NllMWAZDZD",
-        });
-        userFeed.run();
-      </script>
     </div>
+    <div id="instafeed-container" class="container p-5">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: "sequinsboutiques",
+        target: "instafeed-container",
+        resolution: "low_resolution",
+        accessToken: "IGQVJVQzFKS3p0dDVRN1VxNVFvdTBWUGRaNEVIc0c0MHRNMjJrNGF2aDRNYWlmbk1EY1JmSVdod196alpLY2ViQy1GTFVkdXVSNDBWWk9vT3pGS3ZA6LUJxR3RoYm5BVkpUQzB3OHNCcEpqVW40NllMWAZDZD",
+      });
+      userFeed.run();
+    </script>
 
     <footer class="container-fluid mt-5 p-0">
       <div class="container pt-5">
         <div class="row gy-5 text-center text-md-start">
-          <div class="col-xl col-lg-12 col-md-12 col-sm-12 text-center">
-            <img src="./assets/images/footer_logo.png" alt="SEQUINS" />
+          <div class="col-xl col-lg-12 col-md-12 col-sm-12">
+            <img src="./assets/images/logo.svg" alt="SEQUINS" style="height: 150px; width: 150px; object-fit: contain"/>
           </div>
           <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
             <h4>ABOUT</h4>
             <ul>
-              <li>ABOUT US</li>
-              <li>INSTA GALLERY</li>
+              <li><a href="./index.html#about">ABOUT US</a></li>
+              <li><a href="./insta_gallery.html">INSTA GALLERY</a></li>
             </ul>
           </div>
           <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
             <h4>PRODUCT</h4>
             <ul>
-              <li>ANARKALI</li>
-              <li>PALAZZO SETS</li>
-              <li>SHAARARA SETS</li>
+              <li><a href="./index.html#products">ANARKALI</a></li>
+              <li><a href="./index.html#products">PALAZZO SETS</a></li>
+              <li><a href="./index.html#products">SHAARARA SETS</a></li>
             </ul>
           </div>
           <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
