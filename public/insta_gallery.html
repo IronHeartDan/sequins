@@ -42,7 +42,6 @@
       .insta-btn:hover {
         background-color: #e7d7c0;
         color: black;
-        box-shadow: 0 0 5px #3a3a3a;
       }
     </style>
   </head>
@@ -79,7 +78,7 @@
         <div class="container-fluid">
           <div class="d-flex w-100 justify-content-between">
             <div
-              class="navbar-brand d-flex align-items-center"
+              class="d-flex align-items-center"
               style="
                 font-family: 'Cormorant Garamond', sans-serif !important;
                 font-weight: bold;
@@ -147,18 +146,28 @@
         src="./assets/images/asset_one.jpg"
         alt="Insta-Gallery"
         class="w-100"
+        style="object-fit: cover;object-position: top;"
       />
       <div
         class="position-absolute w-100 h-100 d-flex align-items-center"
         style="top: 0; left: 10%; color: white"
       >
-        <h1>ShowCase</h1>
+        <h1
+          style="
+            font-family: 'Cormorant Garamond', sans-serif !important;
+            font-size: 3.5rem;
+          "
+        >
+          ShowCase
+        </h1>
       </div>
     </div>
 
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between px-5 pt-5">
-        <div><strong>Insta Id: sequinsboutiqs</strong></div>
+      <div
+        class="d-flex align-items-center justify-content-between my-3 p-2 flex-wrap"
+      >
+        <div><strong>sequinsboutiqs</strong></div>
         <div>
           <a
             href="https://www.instagram.com/sequinsboutiques/"
@@ -172,7 +181,7 @@
         </div>
       </div>
     </div>
-    <div id="instafeed-container" class="container p-5"></div>
+    <div id="instafeed-container" class="container"></div>
 
     <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
     <script type="text/javascript">
