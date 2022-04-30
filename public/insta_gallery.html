@@ -21,15 +21,15 @@
     ></script>
     <title>SEQUINS</title>
     <style>
-      #instafeed-container{
+      #instafeed-container {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
       }
-      #instafeed-container > a > img{
+      #instafeed-container > a > img {
         width: 100%;
       }
-      .insta-btn{
+      .insta-btn {
         text-decoration: none;
         color: #3a3a3a;
         padding: 5px 10px;
@@ -39,7 +39,7 @@
         display: flex;
         align-items: center;
       }
-      .insta-btn:hover{
+      .insta-btn:hover {
         background-color: #e7d7c0;
         color: black;
         box-shadow: 0 0 5px #3a3a3a;
@@ -110,7 +110,10 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav text-center align-items-baseline p-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
                   >HOME</a
                 >
               </li>
@@ -129,7 +132,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link primary-btn" href="./index.html#contact">Contact Us</a>
+                <a class="nav-link primary-btn" href="./index.html#contact"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
@@ -145,23 +150,29 @@
       />
       <div
         class="position-absolute w-100 h-100 d-flex align-items-center"
-        style="top: 0; left: 10%; color: white;"
+        style="top: 0; left: 10%; color: white"
       >
-      <h1>ShowCase</h1>
+        <h1>ShowCase</h1>
       </div>
     </div>
-
 
     <div class="container">
       <div class="d-flex align-items-center justify-content-between px-5 pt-5">
         <div><strong>Insta Id: sequinsboutiqs</strong></div>
         <div>
-          <a href="https://www.instagram.com/sequinsboutiques/" target="_blank" class="insta-btn"><img src="./assets/images/asset_instagram_icon.png" alt="Instagram">&nbsp&nbsp&nbsp&nbspFollow</a>
+          <a
+            href="https://www.instagram.com/sequinsboutiques/"
+            target="_blank"
+            class="insta-btn"
+            ><img
+              src="./assets/images/asset_instagram_icon.png"
+              alt="Instagram"
+            />&nbsp&nbsp&nbsp&nbspFollow</a
+          >
         </div>
       </div>
     </div>
-    <div id="instafeed-container" class="container p-5">
-    </div>
+    <div id="instafeed-container" class="container p-5"></div>
 
     <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
     <script type="text/javascript">
@@ -169,7 +180,8 @@
         get: "sequinsboutiques",
         target: "instafeed-container",
         resolution: "low_resolution",
-        accessToken: "IGQVJVQzFKS3p0dDVRN1VxNVFvdTBWUGRaNEVIc0c0MHRNMjJrNGF2aDRNYWlmbk1EY1JmSVdod196alpLY2ViQy1GTFVkdXVSNDBWWk9vT3pGS3ZA6LUJxR3RoYm5BVkpUQzB3OHNCcEpqVW40NllMWAZDZD",
+        accessToken:
+          "IGQVJVQzFKS3p0dDVRN1VxNVFvdTBWUGRaNEVIc0c0MHRNMjJrNGF2aDRNYWlmbk1EY1JmSVdod196alpLY2ViQy1GTFVkdXVSNDBWWk9vT3pGS3ZA6LUJxR3RoYm5BVkpUQzB3OHNCcEpqVW40NllMWAZDZD",
       });
       userFeed.run();
     </script>
@@ -178,7 +190,11 @@
       <div class="container pt-5">
         <div class="row gy-5 text-center text-md-start">
           <div class="col-xl col-lg-12 col-md-12 col-sm-12">
-            <img src="./assets/images/logo.svg" alt="SEQUINS" style="height: 150px; width: 150px; object-fit: contain"/>
+            <img
+              src="./assets/images/logo.svg"
+              alt="SEQUINS"
+              style="height: 150px; width: 150px; object-fit: contain"
+            />
           </div>
           <div class="col-12 col-xl col-lg col-md-6 col-sm-12">
             <h4>ABOUT</h4>
@@ -208,19 +224,32 @@
               <li>
                 <div class="row">
                   <div class="col">
-                    <img src="./assets/images/icon_mail.png" alt="Mail" />
+                    <a href="mailto:test@gmail.com"
+                      ><img src="./assets/images/icon_mail.png" alt="Mail"
+                    /></a>
                   </div>
                   <div class="col">
-                    <img src="./assets/images/icon_phone.png" alt="Phone" />
+                    <a href="tel:+9193599 17059"
+                      ><img src="./assets/images/icon_phone.png" alt="Phone"
+                    /></a>
                   </div>
                   <div class="col">
-                    <img
-                      src="./assets/images/icon_facebook.png"
-                      alt="FaceBook"
-                    />
+                    <a
+                      href="https://www.instagram.com/sequinsboutiques/"
+                      target="_blank"
+                      ><img
+                        src="./assets/images/icon_facebook.png"
+                        alt="FaceBook"
+                    /></a>
                   </div>
                   <div class="col">
-                    <img src="./assets/images/icon_insta.png" alt="Instagram" />
+                    <a
+                      href="https://www.instagram.com/sequinsboutiques/"
+                      target="_blank"
+                      ><img
+                        src="./assets/images/icon_insta.png"
+                        alt="Instagram"
+                    /></a>
                   </div>
                 </div>
               </li>

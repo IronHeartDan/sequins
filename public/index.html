@@ -119,7 +119,7 @@
       </nav>
     </header>
 
-    <div class="container-fluid home p-0 mb-5" id="home">
+    <div class="container-fluid home p-0" id="home">
       <!-- Large -->
       <div
         id="carouselBig"
@@ -297,7 +297,7 @@
               />
               <div class="row mt-5">
                 <div
-                  class="col col-md-8 d-flex align-items-center justify-content-between"
+                  class="col col-md-9 d-flex align-items-center justify-content-between"
                 >
                   <a class="primary-btn" href="#contact">Contact Us</a>
 
@@ -334,7 +334,7 @@
       </div>
     </div>
 
-    <div class="container-fluid p-0 p-md-5" id="products">
+    <div class="container-fluid p-0 d-flex flex-column align-items-center justify-content-center" id="products">
       <div class="p-2 p-md-0">
         <h1 class="title text-center">Discover Our Best Products</h1>
         <p class="text-center">
@@ -345,20 +345,20 @@
         </p>
       </div>
       <div
-        class="d-flex align-items-center justify-content-center discover_con p-0 p-md-5 vh-100"
+        class="d-flex align-items-center justify-content-center discover_con p-0 px-md-5 "
       >
         <div class="showCaseItem" id="itemOne" data-order="2">
           <img
             src="./assets/images/asset_anarkali.png"
             alt="ShowCase"
-            style="background-color: white"
+            style="background-color: white; object-position: top"
           />
         </div>
         <div class="showCaseItem" id="itemTwo" data-order="1">
           <img
             src="./assets/images/asset_anarkali.png"
             alt="ShowCase"
-            style="background-color: white"
+            style="background-color: white; object-position: top"
           />
         </div>
 
@@ -366,7 +366,7 @@
           <img
             src="./assets/images/asset_anarkali.png"
             alt="ShowCase"
-            style="background-color: white"
+            style="background-color: white; object-position: top"
           />
         </div>
       </div>
@@ -386,7 +386,7 @@
     </div>
 
     <div
-      class="container-fluid about_us p-3 p-md-5 d-flex align-items-center"
+      class="container-fluid about_us mt-5 p-3 p-md-5 d-flex align-items-center"
       id="about"
     >
       <div class="d-none d-xxl-block p-5">
@@ -849,24 +849,28 @@
           <div
             class="col-12 col-md d-flex flex-column align-items-baseline justify-content-between about_us_content px-3"
           >
-            <h4>Wola, Sample address 560-864 Xyz City.</h4>
-            <h4 class="d-flex align-items-center">
+            <div class="flex-fill d-flex flex-column align-items-baseline ">
+              <p>Wola, Sample address 560-864 Xyz City.</p>
+            <p class="d-flex align-items-center">
               <img
                 src="./assets/images/icon_phone.png"
                 alt="Phone"
                 class="me-3"
               />
               + 91 690 196 016
-            </h4>
-            <h4>Working hours</h4>
+            </p>
+            <p>Working hours</p>
             <span> Mon - Sat: 10:00 - 20:00 </span>
-            <h4>Want to visit?</h4>
+            </div>
+            <div>
+              <p>Want to visit?</p>
             <a
               href="https://www.google.co.in/maps/place/Tesla+HQ/@37.3940974,-122.1523805,17z/data=!3m1!4b1!4m5!3m4!1s0x808fb075776f1c3b:0xccc17e4da6b38370!8m2!3d37.3940932!4d-122.1501918"
               target="_blank"
               style="color: #e7d7c0; text-decoration: none"
               >SEE THE MAP</a
             >
+            </div>
           </div>
         </div>
       </div>
