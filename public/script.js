@@ -3,6 +3,18 @@ window.onload = (e) => {
     changeImage();
   }, 3000);
 
+
+  var mobNavItems = document.querySelectorAll("#mob-nav-item");
+
+
+  mobNavItems.forEach((item)=>{
+    let con = document.getElementById("navbarToggler");
+    item.addEventListener("click",()=>{
+      console.log(con.classList);
+      con.classList.remove("show");
+    });
+  });
+
   var urlLoc = location.hash;
   if (urlLoc) {
     let deskNavItems = document.querySelectorAll(".desk-nav-item");
