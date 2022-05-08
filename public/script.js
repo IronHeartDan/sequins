@@ -3,13 +3,11 @@ window.onload = (e) => {
     changeImage();
   }, 3000);
 
-
   var mobNavItems = document.querySelectorAll("#mob-nav-item");
 
-
-  mobNavItems.forEach((item)=>{
+  mobNavItems.forEach((item) => {
     let con = document.getElementById("navbarToggler");
-    item.addEventListener("click",()=>{
+    item.addEventListener("click", () => {
       console.log(con.classList);
       con.classList.remove("show");
     });
@@ -70,8 +68,9 @@ function changeImage() {
   switch (i) {
     case 1:
       setOrder(itemOne, itemTwo, itemThree);
-      content.innerHTML =
+      let data =
         "<strong>Nothing tastes as good as looking good feels, we offer the best plazo sets <br /> to compliment your style.</strong><br /> Our collection includes: Anarkali, Sharara, Straight Cut Salwar Suit, Punjabi <br /> Salwar Suit, Palazzo Salwar Suit, Angarkha Salwar Suit.";
+      content.innerHTML = data;
       break;
     case 2:
       setOrder(itemThree, itemOne, itemTwo);

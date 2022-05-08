@@ -153,13 +153,21 @@ textarea {
   overflow: hidden;
 }
 
-
 @media screen and (min-width: 500px) {
   .discover_con {
-    width: 50%;
+    width: 100%;
   }
   .discover_con > div {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .discover_con {
+    width: 80%;
+  }
+  .discover_con > div {
+    width: 40%;
   }
 }
 
@@ -200,7 +208,7 @@ textarea {
   filter: grayscale(100%);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -357,6 +365,30 @@ header > div {
   height: 65px;
 }
 
+.home_content > * {
+  font-family: "Cormorant Garamond", sans-serif !important;
+  color: white;
+}
+
+.home_content > h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.home_content > h1 {
+  font-size: 3.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .home_content > h2 {
+    font-size: 1.5rem;
+  }
+
+  .home_content > h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .steps > li {
   margin-top: 20px;
   padding: 10px;
@@ -406,7 +438,7 @@ footer > .container .row div ul li {
   font-weight: 200;
 }
 
-footer > .container .row div ul li  a{
+footer > .container .row div ul li a {
   text-decoration: none;
   color: #3a3a3a;
 }
